@@ -1,0 +1,232 @@
+\chapter{Introduction}
+
+\paragraph{How this idea came about}
+About July, 2010 I was reading an article titled
+``How to write mathematics'' by Paul Halmos\cite{halmos_teach_math}.
+More or less at the same time I was watching the series
+Into the Universe narrated by Stephen Hawking, plus 
+I was very dissapointed with my progress in my personal 
+study of mathematics.\par
+
+\indent
+It all begun when while I was reading Halmos article
+I realized that many of the ideas the article mentioned could
+be implemented through a computer program in order 
+to save time and effort to math students.\par
+
+\paragraph{Halmos's principles for writting maths}
+\indent
+Some of the basic ideas from that article are:
+
+\begin{itemize}
+ \item Writting self-contained materials
+ \item The Spiral plan: iteratively improving the material
+ \item Triptic: Say what you're going to say, say it, 
+    say what you said.
+\item Defined algorithm to determine the order in which
+the topics should be presented
+\end{itemize}
+
+\indent
+The key was to make the process of organizing the topics of 
+a given course in a way that they are unobstrusive to the 
+student. Thus allowing him to concentrate in the topic at hand.
+\par
+
+\paragraph{ Extending the principles to all sciences}
+
+\indent
+I have been a fan of science popularizers for about two or three 
+years now, and like many of them, I know that ``our future depends
+powerfully on how well we understand this Cosmos''.
+\par
+
+\subparagraph{Too moral- Change}
+\indent
+In these times, when people is obsessed with wanting to prescribe
+what other people do with information, it is desperating sometimes
+that the access to public knowledge be so damn difficult. Non-free Books, 
+journals, courses; patents, copyright, and the like limit our capacity
+to benefit from the work of others. And then you have to add the 
+inherent perceived disorganization of knowledge.
+\par
+
+\indent
+Although knowledge is very well organized in clumps of 
+related concepts, that is generally not the case when it 
+comes to non-trivial relations among concepts in what apparently
+are separated fields of knowledge.
+\par
+
+\subparagraph{ Extending ... continued}
+\indent
+In order to preserve all the knowledge, we have to actively
+preach the importance of it. So by making available to everyone
+we should be in better shape.
+\par
+
+\indent
+Halmos' ideas can be applied analogoustly to other sciences but
+not without effort since formal sciences work in quite a different
+manner from the natural ones. Mainly in their method of findind 
+truths is different, natural sciences are inductive while formal 
+sciences are deductive.
+
+\indent
+Nevertheless it's worth exploring 
+the possibilities of following these general guidelines to attain
+a better organization of our current knowledge.
+\par
+
+\indent
+So, I started writting down a simple design of how could be
+achieve this taking advantage of the technology of the day, 
+that is, how to have all the knowledge of all the sciences
+well-organized, with what for any practical purpose is a centralized
+point of access, the Internet.
+\par
+
+\paragraph{The basic idea}
+\indent
+The basic idea is to have a system that allows you to 
+find a topic or concept which you want to learn about, you 
+provide a profile based on you current knowledge of the
+topic and the system is then able to compute the minimal
+tree of dependencies, that is, the mininal number of concepts
+that are needed for you to learn before you are able to 
+actually understand the selected topic or concept.
+\par
+
+\paragraph{The ideal case: Maths}
+
+Why are the formal sciences the ideal case? Well it's is because
+in mathematics is basically structured in the following manner:
+you have a bunch of definitions, a bunch of axioms, and then
+you use those two with well defined rules of inference to build
+theorems.
+
+\indent
+A theorem is a proposition of the form, ''if A, then P´´ where A is one
+or many premises and P is a conclusion that follows from A, although
+this may not always be obvious.
+
+\indent
+There are special kinds of propositions
+which have also the form of a theorem, what separates the theorems from 
+the other propositions is that a proof for it has been given.
+If no proof is given then they are called conjectures, propositions, 
+or hypothesis.
+
+\indent
+In math, given a proposition the objective is to find a proof for it, to do that
+is is possible to use the premises of that proposition and all the 
+other definitions, axioms and theorems that have been proved so far.
+Of course you won't always need all the premises, axioms and definitions to 
+prove a given theorem. In fact in mathematics it's \textbf{always?} 
+possible to find a minimal set of premises, axioms and theorems 
+to prove a given theorem. 
+And that's what makes math the ideal case for a prototype of a network 
+of knowledge.
+
+\indent
+Given a concept, you can easily trace back the dependencies for it.
+In contrast, it is more difficult to organize knowledge in this way
+for natural sciences. Definitions change, we have to distinguish 
+between causation (A implies B) and correlation (A is linked to B, but 
+in a way that we don't understand yet), facts have to be interpreted
+in the context of what's known,.... well you get the idea. The 
+structure for knowledge in the formal sciences is more static/constant
+than the structure for natural sciences, thus easier to organize.
+
+
+\subsection{About generalizations}
+\indent
+Throughout the history of maths, and in general of science, 
+there have been various instances in which a given set of 
+concepts that seemed to be unrelated could later be unified in 
+a generalization. This is in part the objective of this
+computer system, in a not so ambitious idea, to help us 
+identify which concepts seem to have some pattern that suggest
+they may be related. This in principle could be done by analyzing
+the structure of the network they form.
+A more ambitous idea would be to create algorithms to propose
+unifications/generalizations of structures that follow a
+similar patter in the way they are interconnected.
+ 
+\indent
+The hypothesis is that the structure of the interconnectedness between
+concepts can tell us something about an underlying principle that could
+in principle unify them.
+
+
+\subsection{About automation}
+If it is possible to reliably find patterns in the structure
+of knowledge that is in the network, then it may also be
+possible to automate the proposal of new theories, automatic
+proof of proposed theorems, etc.
+
+\subsubsection{About applications}
+\indent
+Concepts are also connected with their \textit{applications},
+that is, if an abstract concept can be used practically in 
+a given scenario then that use is an application of the 
+concept. For example, prime numbers have their applications
+in the field of cryptography, the theory of evolution has 
+repercusions in the design of new drugs, etc.
+
+\indent
+We can then also extend the network of concetps to include 
+their applications. This way, we can hypothesize that 
+analyzing the structure of such relations  concept-application
+we may desing algorithms that coudl propose applications for 
+given concepts. In principle automatically speeding up the 
+proposal of applications.
+
+\subsubsection{Why we need to speed up applications proposals}
+\indent
+Some believe we're are at an unprecented point of human history
+in the sense that science technology had never advanced so fast as it 
+is advancing now (which is true in a sense).
+I personally believe that this is not enough. I thinks we 
+are rather slow in developing new theories and technologies 
+that could allow us to get a better understanding of the cosmos.
+We have a lot of ideas that we cannot currently implement becasue
+nobody has come up with the technology to do it. Some examples 
+of this are, interstellar travel, efficient and clean energy 
+production, anti-aging technologies, etc.
+
+
+\indent
+By integrating all the current knowledge in a unified computer 
+system freely accessible to anyone with internet access, and 
+building a social network around science research, advancing 
+collaboration instead of competition, publishing publicly new
+knowledge, we have a better chance of coming up with a way to 
+accelarate the development of our civilization.
+
+
+\subsubsection{The future of science}
+\indent
+In the light? of these hypothesis we can envision that 
+mathematicians, and scientists in general should find ways 
+to delegate research, at least in the traditional sense to 
+computer systems, given that it is possible to automate
+the research, hypothesys generation, and applications proposal 
+process.
+ 
+ \indent
+Our efforts should be focused on finding better, and faster 
+ways to advance knowlege generation, organization and 
+unification.
+
+
+
+
+\subsection{Ojectives}
+\begin{itemize}
+ \item Minimize the time and effort for learning a 
+given concept.
+\item Minimize the space needed to store 
+information. (Reduce multiplicity)
+\item Optimize the organization of knowledge.
+\end{itemize}

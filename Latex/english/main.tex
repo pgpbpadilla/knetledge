@@ -1,0 +1,149 @@
+%This work is licensed under the Creative Commons 
+%Attribution-NonCommercial-ShareAlike 3.0 Unported License. 
+%To view a copy of this license, visit 
+%http://creativecommons.org/licenses/by-nc-sa/3.0/ 
+%or send a letter to Creative Commons, 
+%444 Castro Street, Suite 900, Mountain View, 
+%California, 94041, USA.
+
+\documentclass[letterpaper,12pt]{report}
+
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+\topmargin 0in
+\headheight 0in
+\headsep 0in
+\textheight 8.5in
+\textwidth 6in
+\oddsidemargin 0.5in
+\evensidemargin 0in
+
+% \usepackage[OT1,T1]{fontenc}
+\usepackage{caption}
+\usepackage{multicol}
+\usepackage{epsfig}
+\usepackage{afterpage}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[pdftex]{hyperref}
+%\usepackage[spanish]{babel}
+% \usepackage{makeidx}
+
+\title{\textbf{Knetledge:} a proposal for optimizing learning strategies 
+and knowledge organization}
+
+ \author{\bf \LARGE Pablo Gerardo Padilla 
+ Beltr\'an\thanks{\large \bf Planet Earth}\\[0.2in]
+ \Large \sffamily pgpb.padilla@gmail.com}
+
+% \date{Avance al 28 de abril de 2008} 
+\date{} 
+
+% \makeindex
+% \makeglossary
+% \parindent 0pt
+% \parskip 1ex
+% \pagenumbering{roman}
+\setlength{\columnsep}{10mm}
+
+% \renewcommand{\baselinestretch}{1.33}
+\newcommand{\hi}{\rule{0em}{2.5ex}}
+\newcommand{\vi}{\vspace{-.17in}}
+\newcommand{\HRule}{\rule{\linewidth}{1mm}}
+
+
+
+\begin{document}
+
+
+
+
+% \begin{titlepage}
+% %  \setlength{\parindent}{0pt}
+% %  \setlength{\parskip}{0pt}
+% 
+% \begin{center}
+%       \begin{tabular}{p{1.3in}p{4.7in}}
+%               \begin{flushleft}
+%               \includegraphics[width=1in]{image/lines-logo.png}
+%               \end{flushleft}
+%       &
+%               \begin{center}
+%               \Large
+%               \textbf{INSTITUTO POLIT\'ECNICO NACIONAL}\\[5mm]
+%               \normalsize \sffamily
+%               \textbf{ESCUELA SUPERIOR DE C\'OMPUTO}\\[1in]
+%                                                       
+%               \large \sffamily
+%               \textbf{Trabajo Terminal n\'umero 2007-088} \\[10mm]
+%               ``Una aproximaci\'on al fen\'omeno
+%               de Muerte Celular Programada utilizando 
+%               t\'ecnicas computacionales'' \\ [15mm]
+%               \textbf{Que para obtener el t\'itulo de} \\
+%               ``Ingeniero en Sistemas Computacionales con
+%               la especialidad en Sistemas''\\[15mm]
+%               \textbf{Presenta}\\[5mm]
+%               Pablo Gerardo Padilla Beltr\'an\\[0.5in]
+%               \textbf{Directores}\\[5mm]
+%               M. en C. Rosaura Palma Orozco\hspace{0.2in}
+%               Dr. Pablo Padilla Longoria\\
+%               \vspace*{10mm}
+%               M\'exico D. F.,  Mayo de 2008
+%               \end{center}
+% %     &
+% %             \begin{flushright}
+% %             \includegraphics[width=0.9in]{expo-16Nov07/escom.png}
+% %             \end{flushright}
+%       \end{tabular}
+% \end{center}
+% \end{titlepage}
+
+\maketitle
+
+% \tableofcontents
+% \newpage 
+% \listoffigures
+% \listoftables 
+
+% \chapter{Some Chapter}
+
+\input{introduction}
+\input{motivation}
+\input{problems_general}
+\input{problems_detail}
+\input{solutions_general}
+\input{implications_general}
+% \input{solutions_detail}
+\input{tech_specs}
+
+
+% \pagenumbering{arabic}
+
+% 
+
+% %%%%%%%%%%%%%%%%%%%Appendix%%%%%%%%%%
+\appendix
+\input{definitions}
+%%%%%%%%%%%%%%%%glossary
+
+
+
+%%%%%%%%%%%%%%%%Bibliography%%%%%%%%%%%5
+
+% \phantomsection
+% \addcontentsline{toc}{chapter}{Bibliograf\'ia y referencias}
+
+% \def\bibname{Bibliograf\'ia y referencias}
+% \bibliographystyle{plain}
+% \nocite{}
+% 
+% \bibliography{references}
+
+
+% \printindex
+\end{document}
